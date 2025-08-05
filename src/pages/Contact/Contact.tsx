@@ -10,7 +10,6 @@ import {
   MapPin,
   Github,
   Linkedin,
-  Twitter,
   Send,
   CheckCircle,
   AlertCircle,
