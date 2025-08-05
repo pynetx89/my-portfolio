@@ -353,23 +353,25 @@ const Contact: React.FC = () => {
                   whileTap={{ scale: isSubmitting ? 1 : 0.98 }}
                 >
                   <Button
-                    borderRadius="0.75rem"
+                    borderRadius="1rem"
                     type="submit"
                     disabled={isSubmitting}
-                    className={
-                      isSubmitting ? "opacity-50 cursor-not-allowed" : ""
-                    }
+                    className={`w-full py-4 px-6 flex items-center justify-center font-medium transition-all duration-300 ${
+                      isSubmitting 
+                        ? "opacity-50 cursor-not-allowed" 
+                        : "hover:scale-105 active:scale-95"
+                    }`}
                   >
                     {isSubmitting ? (
-                      <>
-                        <div className="h-5 w-5 mr-2 border-2 border-white border-t-transparent rounded-full animate-spin" />
-                        Sending...
-                      </>
+                      <div className="flex items-center">
+                        <div className="h-5 w-5 mr-2 border-2 border-current border-t-transparent rounded-full animate-spin" />
+                        <span>Sending...</span>
+                      </div>
                     ) : (
-                      <>
+                      <div className="flex items-center">
                         <Send className="h-5 w-5 mr-2" />
-                        Send Message
-                      </>
+                        <span>Send Message</span>
+                      </div>
                     )}
                   </Button>
                 </motion.div>
