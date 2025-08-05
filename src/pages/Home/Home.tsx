@@ -165,7 +165,7 @@ const Home: React.FC = () => {
               animate={{ opacity: 1 }}
               transition={{ duration: 0.6, delay: 2.3 }}
             >
-              Specializing in
+              <b>Specializing in</b>
             </motion.p>
             <motion.div
               className="flex flex-wrap justify-center gap-4"

@@ -19,7 +19,7 @@ import emailjs from "@emailjs/browser";
 import { emailJSConfig } from "@/config/email.config";
 
 const Contact: React.FC = () => {
-  const contactText = "Let's build something amazing together";
+  // const contactText = "Let's build something amazing together";
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -181,11 +181,11 @@ const Contact: React.FC = () => {
               words="Get In Touch"
               className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6"
             />
-            <TextGenerateEffect
+            {/* <TextGenerateEffect
               words={contactText}
               className="text-lg md:text-xl lg:text-2xl text-neutral-300 max-w-3xl mx-auto"
               duration={0.02}
-            />
+            /> */}
           </motion.div>
 
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16">
